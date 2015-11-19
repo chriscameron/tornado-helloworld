@@ -1,0 +1,14 @@
+# Ubuntu upstart file at /etc/init/<service>.conf
+# More info: http://upstart.ubuntu.com/cookbook/
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+respawn
+respawn limit 10 5
+
+setuid <%= @user %>
+setgid <%= @user %>
+
+exec <%=@virtual_env%>/bin/python <%=@app_root%>/<%=@app_name%>.py
+

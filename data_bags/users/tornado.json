@@ -1,0 +1,13 @@
+{
+  "id": "tornado",
+  "password": "$1$cI.O63oe$85HC.nrLab1rXhgyLznaD0",
+  "ssh_keys": [
+    ""
+  ],
+  "ssh_private_key": "",
+  "ssh_public_key": "",
+  "groups": [ "sysadmin" ],
+  "uid": 2000,
+  "shell": "\/bin\/bash",
+  "comment": "Tornado User"
+}

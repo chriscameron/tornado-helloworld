@@ -1,0 +1,48 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+# Ignore other unneeded files.
+database.yml
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
+
+#dont check in simpleCov report
+coverage/
+
+# Ignore redis rdb file
+dump.rdb
+
+/chef/solutions/*/nodes/*
+
+# Personal seed file.
+/db/seeds/personal.rb
+
+# Ignore vagrant dir
+.vagrant
+.kitchen
+.kitchen/
+.kitchen.local.yml
+
+nodes/*
+clients/*
+
+.chef/local-mode-cache
+.chef/vms
+.chef/provisioning
+.chef/keys
+checksums/*
+checksums
+data_bags/aws*

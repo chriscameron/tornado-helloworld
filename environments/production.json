@@ -1,0 +1,19 @@
+{
+  "name": "production",
+  "default_attributes": {
+    "app_environment": "production",
+    "authorization": {
+      "sudo": {
+        "groups": ["admin", "wheel", "sysadmin"],
+        "users": ["ubuntu", "tornado"],
+        "passwordless": true,
+        "agent_forwarding": true
+      }
+    }
+  },
+  "json_class": "Chef::Environment",
+  "description": "",
+  "cookbook_versions": {
+  },
+  "chef_type": "environment"
+}

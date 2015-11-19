@@ -1,0 +1,19 @@
+{
+  "name": "dev",
+  "default_attributes": {
+    "app_environment": "development",
+    "authorization": {
+      "sudo": {
+        "groups": ["admin", "wheel", "sysadmin"],
+        "users": ["ubuntu", "tornado", "vagrant"],
+        "passwordless": true,
+        "agent_forwarding": true
+      }
+    }
+  },
+  "json_class": "Chef::Environment",
+  "description": "",
+  "cookbook_versions": {
+  },
+  "chef_type": "environment"
+}
